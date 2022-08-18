@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/assets/css/bootstrap.css?v=1.5" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css?v=1.5">
+
+</head>
+<body>
+    <!-- HEADER Start  -->
+    <header>
+      <nav class="navbar" id="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#">Snaptory</a>
+            <div class="navbar-language">
+              <div class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg class="svg-globe" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.33334C4.9374 1.33334 0.833344 5.4374 0.833344 10.5C0.833344 15.5626 4.9374 19.6667 10 19.6667C15.0626 19.6667 19.1667 15.5626 19.1667 10.5C19.1667 5.4374 15.0626 1.33334 10 1.33334ZM2.09412 10.0833H6.04855C6.13212 7.55265 6.9645 5.50806 7.7927 4.08012C8.11769 3.5198 8.44309 3.0525 8.72464 2.68554C5.09242 3.2738 2.28857 6.33342 2.09412 10.0833ZM6.06924 11.3333H2.12668C2.4989 14.8914 5.22791 17.7482 8.72462 18.3145C8.44308 17.9475 8.11768 17.4802 7.7927 16.9199C7.01044 15.5712 6.22445 13.6723 6.06924 11.3333ZM7.32232 11.3333H12.6777C12.5252 13.3994 11.8274 15.0835 11.126 16.2928C10.7295 16.9764 10.3338 17.5048 10.0396 17.8599L10 17.9073L9.96044 17.8599C9.66625 17.5048 9.27049 16.9764 8.87399 16.2928C8.1726 15.0835 7.47484 13.3994 7.32232 11.3333ZM12.7007 10.0833H7.29931C7.38218 7.82641 8.12602 5.99687 8.87399 4.70727C9.27049 4.02364 9.66625 3.49522 9.96044 3.14016L10 3.09271L10.0396 3.14016C10.3338 3.49522 10.7295 4.02364 11.126 4.70727C11.874 5.99687 12.6178 7.82641 12.7007 10.0833ZM13.9308 11.3333C13.7756 13.6723 12.9896 15.5712 12.2073 16.9199C11.8823 17.4802 11.5569 17.9475 11.2754 18.3145C14.7721 17.7482 17.5011 14.8914 17.8733 11.3333H13.9308ZM17.9059 10.0833H13.9515C13.8679 7.55265 13.0355 5.50806 12.2073 4.08012C11.8823 3.5198 11.5569 3.0525 11.2754 2.68554C14.9076 3.2738 17.7115 6.33342 17.9059 10.0833Z" fill="#49495A"/></svg>English</div>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li><li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                  <li><a class="dropdown-item" href="#">GGG</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </header>
+    <!-- MAIN Start  -->
+    <main>
+        <div class="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav style="margin-top:1rem;--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            </ol>
+                          </nav>
+                        <div class="profile-info">
+                            <img src="https://pickaface.net/gallery/avatar/unr_demo_181102_1037_17ut.png" alt="Avatar" class="avatar">
+                            <div class="info-box">
+                                <div class="info-item post-count"><span class="info-count">21</span><span class="count-txt">Posts</span></div><div class="info-line"></div>
+                                <div class="info-item follower-count"><span class="info-count">563</span><span class="count-txt">Followers</span></div><div class="info-line"></div>
+                                <div class="info-item following-count"><span class="info-count">172</span><span class="count-txt">Following</span></div>
+                            </div>
+                        </div>
+                        <div class="username">Eliott Johnson</div>
+                        <div class="user-bio">Những bài hát bạn Cover. Xin hãy inbox để mình có thể chia sẻ nó đến mọi người nhé !</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="media mt-3">
+            <div class="container">
+                
+                <div class="storys mt-3" id="storys">
+                    <h3 class="title mb-2">Storys</h3>
+
+                    <div class="story-list owl-carousel" id="story-list" style="display: none">
+                        <div class="story-item" onclick="socialStory.launch();">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <div class="story-loadimg"></div>
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                        <div class="story-item" onclick="socialStory.launch(1);">
+                            <div class="story-thumb">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLa_PZZeCMYZeyPdGzoqA9PmzL2YiiEMkgw&amp;usqp=CAU" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert-story"><span id="alert-story">asss</span></div>
+                    <div class="storyloading" id="storyloading">
+                        <div class="loadstory">
+                            <div class="shape shape1"></div>
+                            <div class="shape shape2"></div>
+                            <div class="shape shape3"></div>
+                            <div class="shape shape4"></div>
+                          </div>
+                    </div>
+                    <!-- socialStory.launch(2); -->
+                    <div id="storytime"><div class="storytime" style="opacity: 0; display: none;"><div class="story-cover"></div><div class="story-window"><a href="#" class="story-arrow left" onclick="event.preventDefault(); socialStory.prev();"></a><a href="#" class="story-arrow right" onclick="event.preventDefault(); socialStory.next();"></a><div class="story-nav"><div class="story-nav-left"><span class="story-text"></span><span class="story-date"></span></div><div class="story-nav-right"><button class="btn btn-success download-story-btn" onclick="socialStory.downloadStory()">Download</button><a href="#" class="close story-close" onclick="event.preventDefault(); socialStory.close();"></a></div></div><div class="story-timeline"><div class="story-timeline-item"><div class="story-timeline-line"></div><div class="story-timeline-line-active story-active-0" style="width: 0%;"></div></div><div class="story-timeline-item"><div class="story-timeline-line"></div><div class="story-timeline-line-active story-active-1" style="width: 0%;"></div></div><div class="story-timeline-item"><div class="story-timeline-line"></div><div class="story-timeline-line-active story-active-2" style="width: 0%;"></div></div><div class="story-timeline-item"><div class="story-timeline-line"></div><div class="story-timeline-line-active story-active-3" style="width: 0%;"></div></div></div><div class="story-video" onclick="event.preventDefault(); socialStory.next();"><video class="story-next story-video-elem" playsinline=""></video><img class="story-image story-next"></div><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div></div></div>
+                </div>
+                <div class="post">
+                    <h3 class="title">Posts</h3>
+                    <div class="media-list" id="media-list">
+                            <div class="media-item">
+                                <img src="https://sanvemaybay.vn/includes/uploads/2020/10/La%CC%80ng-Grindelwald-e1602748582813.jpg" onclick="showFile(0)" alt="photo">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fff" d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"></path></svg>
+                            </div>
+                            <div class="media-item">
+                                <img src="https://sanvemaybay.vn/includes/uploads/2020/10/La%CC%80ng-Grindelwald-e1602748582813.jpg" onclick="showFile(1)" alt="photo">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fff" d="M384 112v288c0 26.51-21.49 48-48 48h-288c-26.51 0-48-21.49-48-48v-288c0-26.51 21.49-48 48-48h288C362.5 64 384 85.49 384 112zM576 127.5v256.9c0 25.5-29.17 40.39-50.39 25.79L416 334.7V177.3l109.6-75.56C546.9 87.13 576 102.1 576 127.5z"></path></svg>
+                            </div>
+                            <div class="media-item">
+                                <img src="https://cdn.tgdd.vn/GameApp/2/223690/Screentshots/remini-photo-enhancer-ung-dung-phuc-che-anh-cu-thong-minh-01-06-2022-1.png" onclick="showFile(2)" alt="photo">
+                                <i class="icon-photo">Icon</i>
+                            </div>
+                    </div>
+                </div>
+                <div class="post">
+                  <h3 class="title">Video</h3>
+                  <div class="media-list posts" id="posts">
+                    <div class="media-item">
+                        <img src="https://sanvemaybay.vn/includes/uploads/2020/10/La%CC%80ng-Grindelwald-e1602748582813.jpg" onclick="showFile(0)" alt="photo">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fff" d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"></path></svg>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+          
+          <div class="content" id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                      <div class="feature">
+                        <div class="feature-title">
+                          <h2 class="h2">Why StoryViewer Is the Best Instagram Viewer</h2>
+                          <span class="feature-desc">There are a lot of reasons why StoryViewer is the best Instagram viewer Let's take a look at 4 of them!</span>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 feature-item">
+                              <div class="feature-img"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#icon18"> <style type="text/css"> .icon-18-0{fill:none;stroke:#BDC5D1;}.icon-18-1{fill:none;stroke:#FFFFFF;}.icon-18-2{fill:none;stroke: #0072F9;}.icon-18-3{fill:none;stroke:#BDC5D1;}.icon-18-4{fill:#BDC5D1;}.icon-18-5{fill: #0072F9;}</style> <polygon class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="71.3,78.1 97.6,78.1 100.6,85.3 68.2,85.3 "></polygon> <g opacity=".5"> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M92,18.4h12.1c3.1,0,5.5,2.5,5.5,5.5v64.2"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M50.4,96.7H7.1c-3.1,0-5.5-2.5-5.5-5.5V23.9c0-3.1,2.5-5.5,5.5-5.5h38.3"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M109.6,91.2"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M99.1,79.8"></path> <line class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1.5" y1="79.8" x2="66.2" y2="79.8"></line> <line class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="102" y1="79.8" x2="109" y2="79.8"></line> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M9,79.8"></path> <g> <line class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42" y1="96.7" x2="38.8" y2="111.9"></line> </g> <line class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="50.4" y1="111.9" x2="27.8" y2="111.9"></line> </g> <g> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M42.5,45.3c0.4-1.3,0.6-2.7,0.6-4.2c0-6.9-5-12-11.1-12S21,34.3,21,41.2c0,1.5,0.2,2.9,0.6,4.2 c-0.9,0.6-1.4,1.6-1.4,2.7c0,1.5,1,2.7,2.3,3.1c1.6,4.7,5.3,8.1,9.6,8.1s8-3.3,9.6-8.1C43,50.7,44,49.5,44,48 C44,46.9,43.4,45.9,42.5,45.3z"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M39.8,40.6c-0.3-1.3-1.2-1.3-2.3-1.3c-0.4,0-0.6-2.9-0.6-2.9s-1.2,0-3.2,1.8c-4.2,3.7-8.8,0.8-8.8,0.8"></path> <g> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M21.7,41.9"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M41.7,64.1l10.5,4.4c1.9,1,2.7,2.9,2.7,4.9v0.4v5.6"></path> <polyline class="icon-18-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="32.2,65.6 36.3,70.2 41.8,64.3 39.4,60.2 "></polyline> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M22.7,64.1l-10.3,4.2c-0.7,0.4-1.2,0.9-1.6,1.5c-0.7,1-1.1,2.1-1.1,3.4v6.2"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M22.1,47.8"></path> <polyline class="icon-18-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="32.2,65.6 28.2,70.2 22.7,64.3 25,60.2 "></polyline> <line class="icon-18-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.4" y1="60.2" x2="32.2" y2="65.6"></line> <line class="icon-18-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="25" y1="60.2" x2="32.2" y2="65.6"></line> </g> </g> <line class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="63.1" y1="109.8" x2="63.1" y2="118"></line> <line class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="106.7" y1="109.8" x2="106.7" y2="118"></line> <g> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M90.3,78.1V76c3.7-2,6.6-5.8,8.2-10.5c2-0.6,3.5-2.4,3.5-4.7c0-1.7-0.9-3.2-2.1-4.1c0.6-2,1-4.1,1-6.2 c0-10.4-7.5-18.1-16.7-18.1c-9.2,0-16.7,7.8-16.7,18.1c0,2.2,0.3,4.3,1,6.2c-1.3,0.9-2.1,2.4-2.1,4.1c0,2.2,1.5,4.1,3.5,4.7 c1.6,4.7,4.5,8.5,8.2,10.5v2.1"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M118.5,118V98.2v-0.6c0-3-1.2-5.9-4.1-7.4l-13.7-5l0,0.1"></path> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M68.4,84.9l-13.9,5c-1,0.6-1.8,1.4-2.5,2.3c-1,1.5-1.6,3.2-1.6,5.1V118"></path> </g> <line class="icon-18-3 fill-none stroke-gray-400" opacity=".5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.3" y1="100.2" x2="85.9" y2="111.6"></line> <line class="icon-18-3 fill-none stroke-gray-400" opacity=".5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="96" y1="108.5" x2="92.2" y2="112.3"></line> <path class="icon-18-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M99.9,56.8c-1.2,3.5-4.8,6.7-7,8.4c-0.3,0.2-2.4-2.5-2.4-2.5s-1.3,4.8-2,5c-6.4,2.4-14.3-0.6-20.1-11"></path> <g> <g> <path class="icon-18-4 fill-gray-400" opacity=".5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M87.2,7.5h-38c-2.4,0-4.3,1.9-4.3,4.3v14.3c0,2.4,1.9,4.3,4.3,4.3h3.6v7l11.1-7h23.3c2.4,0,4.3-1.9,4.3-4.3 V11.8C91.5,9.4,89.6,7.5,87.2,7.5z"></path> <path class="icon-18-5 fill-primary" d="M81.4,2h-38c-2.4,0-4.3,1.9-4.3,4.3v14.3c0,2.4,1.9,4.3,4.3,4.3H47v7l11.1-7h23.3c2.4,0,4.3-1.9,4.3-4.3V6.3 C85.7,3.9,83.8,2,81.4,2z"></path> <g> <line class="icon-18-1 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="73.9" y1="10.3" x2="50.9" y2="10.3"></line> <line class="icon-18-1 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="56.2" y1="16.5" x2="50.9" y2="16.5"></line> </g> </g> </g> </svg></div>
+                              <div class="feature-text">
+                                <h3>No registration needed</h3>
+                                <p>No registration needed, view the feed and stories without logging in or installing an application.</p>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 feature-item">
+                              <div class="feature-img"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="204" height="204" viewBox="0, 0, 120, 120"> <g id="Layer_1"> <path d="M115.5,108.9 L15.3,108.9 C12.8,108.9 10.8,106.9 10.8,104.4 L10.8,29.8 C10.8,27.3 12.8,25.3 15.3,25.3 L115.5,25.3 C118,25.3 120,27.3 120,29.8 L120,104.3 C120,106.9 118,108.9 115.5,108.9 z" fill="#BDC5D1" opacity="0.4"/> <g> <path d="M106,94.7 L5.8,94.7 C3.3,94.7 1.3,92.7 1.3,90.2 L1.3,15.6 C1.3,13.1 3.3,11.1 5.8,11.1 L106,11.1 C108.5,11.1 110.5,13.1 110.5,15.6 L110.5,90.1 C110.5,92.7 108.5,94.7 106,94.7 z" fill="#FFFFFF"/> <path d="M106,94.7 L5.8,94.7 C3.3,94.7 1.3,92.7 1.3,90.2 L1.3,15.6 C1.3,13.1 3.3,11.1 5.8,11.1 L106,11.1 C108.5,11.1 110.5,13.1 110.5,15.6 L110.5,90.1 C110.5,92.7 108.5,94.7 106,94.7 z" fill-opacity="0" stroke="#BDC5D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/> </g> <path d="M36.2,20.8 C36.2,22.457 34.857,23.8 33.2,23.8 C31.543,23.8 30.2,22.457 30.2,20.8 C30.2,19.143 31.543,17.8 33.2,17.8 C34.857,17.8 36.2,19.143 36.2,20.8 z" fill-opacity="0" stroke="#BDC5D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" opacity="0.5"/> <path d="M25,20.8 C25,22.457 23.657,23.8 22,23.8 C20.343,23.8 19,22.457 19,20.8 C19,19.143 20.343,17.8 22,17.8 C23.657,17.8 25,19.143 25,20.8 z" fill-opacity="0" stroke="#BDC5D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" opacity="0.5"/> <path d="M13.8,20.8 C13.8,22.457 12.457,23.8 10.8,23.8 C9.143,23.8 7.8,22.457 7.8,20.8 C7.8,19.143 9.143,17.8 10.8,17.8 C12.457,17.8 13.8,19.143 13.8,20.8 z" fill-opacity="0" stroke="#377DFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/> <path d="M1.3,30 L110.5,30" fill-opacity="0" stroke="#BDC5D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/> </g> <g id="Layer_2"> <path d="M55.588,75.864 L55.588,75.864 C53.541,77.908 50.025,76.619 49.757,73.73 L49.757,73.73 C49.579,71.864 47.933,70.486 46.063,70.619 L46.063,70.619 C43.17,70.841 41.3,67.641 42.947,65.241 L42.947,65.241 C44.016,63.685 43.66,61.596 42.102,60.485 L42.102,60.485 C39.743,58.796 40.366,55.152 43.17,54.396 L43.17,54.396 C44.995,53.907 46.063,52.04 45.573,50.218 L45.573,50.218 C44.817,47.418 47.71,45.018 50.336,46.262 L50.336,46.262 C52.028,47.062 54.075,46.307 54.876,44.618 L54.876,44.618 C56.123,41.995 59.861,41.995 61.063,44.618 L61.063,44.618 C61.864,46.307 63.912,47.062 65.603,46.262 L65.603,46.262 C68.23,45.062 71.078,47.462 70.366,50.218 L70.366,50.218 C69.876,52.04 70.945,53.907 72.77,54.396 L72.77,54.396 C75.574,55.152 76.197,58.841 73.838,60.485 L73.838,60.485 C72.28,61.552 71.924,63.685 72.992,65.241 L72.992,65.241 C74.639,67.597 72.77,70.841 69.876,70.619 L69.876,70.619 C68.007,70.441 66.36,71.864 66.182,73.73 L66.182,73.73 C65.915,76.619 62.399,77.864 60.351,75.864 L60.351,75.864 C59.06,74.53 56.924,74.53 55.588,75.864 z" fill="#BDC5D1" opacity="0.5"/> <path d="M53.496,70.93 L53.496,70.93 C51.449,72.975 47.933,71.686 47.665,68.797 L47.665,68.797 C47.487,66.93 45.841,65.552 43.971,65.685 L43.971,65.685 C41.078,65.908 39.208,62.708 40.855,60.307 L40.855,60.307 C41.924,58.752 41.567,56.663 40.01,55.552 L40.01,55.552 C37.651,53.863 38.274,50.218 41.078,49.462 L41.078,49.462 C42.903,48.973 43.971,47.107 43.481,45.284 L43.481,45.284 C42.725,42.484 45.618,40.084 48.244,41.329 L48.244,41.329 C49.936,42.129 51.983,41.373 52.784,39.684 L52.784,39.684 C54.031,37.062 57.769,37.062 58.971,39.684 L58.971,39.684 C59.772,41.373 61.775,42.129 63.511,41.329 L63.511,41.329 C66.137,40.128 68.986,42.529 68.274,45.284 L68.274,45.284 C67.784,47.107 68.853,48.973 70.678,49.462 L70.678,49.462 C73.482,50.218 74.105,53.907 71.746,55.552 L71.746,55.552 C70.188,56.618 69.832,58.752 70.9,60.307 L70.9,60.307 C72.547,62.663 70.678,65.908 67.784,65.685 L67.784,65.685 C65.915,65.508 64.268,66.93 64.09,68.797 L64.09,68.797 C63.823,71.686 60.307,72.93 58.259,70.93 L58.259,70.93 C56.968,69.597 54.832,69.597 53.496,70.93 z" fill="#377DFF"/> <path d="M62.621,54.84 C62.621,58.547 59.612,61.552 55.9,61.552 C52.188,61.552 49.179,58.547 49.179,54.84 C49.179,51.134 52.188,48.129 55.9,48.129 C59.612,48.129 62.621,51.134 62.621,54.84 z" fill="#FFFFFF"/> <path d="M64.58,76.753 L69.787,86.487 L74.105,80.042 L81.85,80.086 L74.995,67.197" fill-opacity="0" stroke="#BDC5D1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/> <path d="M47.22,76.753 L42.013,86.487 L37.695,80.042 L29.95,80.086 L36.805,67.197" fill-opacity="0" stroke="#BDC5D1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/> </g></svg></div>
+                              <div class="feature-text">
+                                <h3>100% anonymity</h3>
+                                <p>You will be completely anonymous. Just enter the username you want to see on StoryViewer and you can see their stories, no need to follow – no following required!</p>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 feature-item">
+                              <div class="feature-img"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#icon9"><style type="text/css">.icon-9-0{fill:none;stroke:#FFFFFF;}.icon-9-1{fill:#BDC5D1;}.icon-9-2{fill: #0072F9;}.icon-9-3{fill:none;stroke:#BDC5D1;}.icon-9-5{fill:none;stroke: #0072F9;}</style><path class="icon-9-1 fill-gray-400" opacity=".5" d="M35.7,120H4c-2.2,0-4-1.8-4-4V54.1c0-2.2,1.8-4,4-4h31.7c2.2,0,4,1.8,4,4V116C39.7,118.2,37.9,120,35.7,120z"></path><path class="icon-9-2 fill-primary" d="M48.4,116.4H16.7c-2.2,0-4-1.8-4-4V48.5c0-2.2,1.8-4,4-4h31.7c2.2,0,4,1.8,4,4v63.9 C52.4,114.6,50.6,116.4,48.4,116.4z"></path><path class="icon-9-3 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M80.3,106.9c0,1.4-1.1,2.6-2.6,2.6c-1.4,0-2.6-1.1-2.6-2.6c0-1.4,1.1-2.6,2.6-2.6 C79.2,104.3,80.3,105.5,80.3,106.9z"></path><circle class="icon-9-0 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="33.2" cy="109.9" r="2.6"></circle><line class="icon-9-0 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.3" y1="52.1" x2="47.6" y2="52.1"></line><line class="icon-9-0 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="47.6" y1="101.7" x2="17.3" y2="101.7"></line><path class="icon-9-3 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M36.9,35.3V5.6c0-2.1,1.7-3.8,3.8-3.8h73.9c2.1,0,3.8,1.7,3.8,3.8v104.9c0,2.1-1.7,3.8-3.8,3.8H61.3"></path><line class="icon-9-5 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="94" y1="28.8" x2="61.5" y2="71.4"></line><line class="icon-9-5 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="71.6" y1="68.8" x2="82.1" y2="55.1"></line><line class="icon-9-5 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85.4" y1="50.8" x2="90.2" y2="44.7"></line><line class="icon-9-0 fill-none stroke-white" opacity=".5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="43.1" y1="62.3" x2="20.8" y2="91.5"></line><line class="icon-9-0 fill-none stroke-white" opacity=".5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.7" y1="89.7" x2="34.9" y2="80.3"></line><line class="icon-9-0 fill-none stroke-white" opacity=".5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.2" y1="77.3" x2="40.5" y2="73.2"></line><line class="icon-9-0 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="72.5" y1="6.8" x2="82.7" y2="6.8"></line><polyline class="icon-9-3 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="45.6,34.8 45.6,11.7 109.9,11.7 109.9,66.4 "></polyline><polyline class="icon-9-3 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="109.9,81.7 109.9,96.9 59.3,96.9 "></polyline></svg></div>
+                              <div class="feature-text">
+                                <h3>Loading capability</h3>
+                                <p>You can download ig stories and posts to your computer, phone (iPhone iOS, Android) or laptop.</p>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 feature-item">
+                              <div class="feature-img"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#icon30"><style type="text/css">.icon-30-0{fill:#BDC5D1;}.icon-30-1{fill:#FFFFFF;stroke:#BDC5D1;}.icon-30-2{fill:#FFFFFF;}.icon-30-3{fill: #0072F9;}.icon-30-4{fill:none;stroke: #0072F9;}</style><g><polygon class="icon-30-0 fill-gray-400" opacity=".3" points="119.2,47.9 103.5,26.8 96.3,17.2 96.3,17.2 71.9,14.6 66.7,14.1 66.7,14.1 66.7,14.1 66.7,14.1 66.7,14.1 66.7,14.1 66.7,14.1 64.3,14.3 37.1,17.2 14.2,47.9 14.2,47.9 14.2,47.9 66.7,109.1 119.2,47.9 "></polygon><path class="icon-30-1 fill-white stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M25.7,14.1L55.3,11l29.6,3.1l22.9,30.7l-52.5,61.1L2.8,44.8L25.7,14.1z"></path><g transform="translate(59.000000, 85.000000)"><polygon class="icon-30-2 fill-white" points="-3.7,-73.3 -32,-70.3 -33.6,-40.9"></polygon><polygon class="icon-30-2 fill-white" points="-3.7,-73.3 24.5,-70.3 26.1,-40.9"></polygon><polygon class="icon-30-3 fill-primary" points="46.4,-40.9 24.5,-70.3 26.1,-40.9"></polygon><polygon class="icon-30-3 fill-primary" points="-53.9,-40.9 -32,-70.3 -33.6,-40.9"></polygon><polygon class="icon-30-3 fill-primary" points="-3.7,-73.3 -33.6,-40.9 26.1,-40.9"></polygon></g></g><line class="icon-30-4 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27" y1="56.8" x2="40.2" y2="72.6"></line><line class="icon-30-4 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="44.4" y1="77.6" x2="48" y2="82"></line></svg></div>
+                              <div class="feature-text">
+                                <h3>Free high quality download</h3>
+                                <p>We always provide the highest possible quality for our users, Try and feel</p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                        <h3 class="h3 mt-0">About Story Viewer</h3>
+                        <p>Website <b>StoryViewer</b> is a new app that allows you to view Instagram Stories anonymously It's simple to use - just enter the username of the person whose stories you want to see and hit  <b>View now</b> You can also watch stories from people who you follow.</p>
+                        <p>Even if they don't follow you back StoryViewer is perfect for keeping up with friends, family and your favourite celebrities without them knowing! So what are you waiting for? Use StoryViewer now and start <b>Instagram Stories stalking</b> Anonymously!</p>
+                       
+                        <h3 class="h3">Instagram Story Viewer The Best Way to View Stories Anonymously</h3>
+                       <p>If you are looking for an easy and anonymous way to view Instagram stories, then you <b>StoryViewer.io</b> is the best choice for you. We'll just show you anyone's Instagram stories they never knew.</p>
+                       <p><b>StoryViewer</b> is not only completely anonymous, but super simple to do Just follow the steps below and you'll be up and running in no time. So what are you waiting for? <b>Start now!</b></p>
+                       <ol>
+                        <li>Enter the Link Instagram Profile / Username that you want to see their Story anonymously so they don't find out in the Search Bar</li>
+                        <li>Click <b>View Now</b></li>
+                        <li>View and <b>Download</b> if you love that photo or Video</li>
+                       </ol>
+
+                       <h3 class="h3">How StoryViewer Can Help You Stalk Instagram Stories Anonymously</h3>
+                       <p>If you're interested in stalking Instagram Stories anonymously, then you need to check out StoryViewer. This website is a great way to view Instagram stories without having to worry about the person who posted them knowing that you've seen them Plus, it's free to use!</p>
+
+                      <h3 class="h3">The Benefits of Using StoryViewer to View Instagram Stories</h3>
+                      <p>If you're looking for a way to view Instagram Stories without being seen, StoryViewer is the perfect solution With <b>StoryViewer.</b></p>
+                      <p>You can anonymously view any public Instagram story without leaving a trace Plus, you can even download stories and save them for later Keep reading to learn more about the benefits of using StoryViewer to view Instagram Stories</p>
+
+                       <h3 class="h3">The Advantages of StoryViewer Over Other Instagram Story Viewers</h3>
+                       <ul>
+                        <li>There are many advantages of using StoryViewer over other Instagram story viewers</li>
+                        <li>StoryViewer allows you to view anyone's stories anonymously without them knowing</li>
+                        <li>You can also download and save stories, as well as view private accounts and see who stalks your profile the most </li>
+                        <li>StoryViewer is a great tool for staying up-to-date on what's happening with friends, family, and celebrities without having to follow them on Instagram</li>
+                       </ul>
+                       <h3 class="h3 text-center mt-5 mb-3">FAQ</h3>
+                       <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              FAQ Item #1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                FAQ Item #2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                FAQ Item #3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </main>
+    <div class="modal fade viewer-modal" id="viewer" tabindex="-1" aria-labelledby="viewerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <video controls src="https://cdn.instastories.net/aHR0cHM6Ly9zY29udGVudC1pYWQzLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MC4xMjQ0MS0xNi8yODU1NDI2OTNfNTY2OTYzNDU0ODUzOTI1XzE3MjYxMjU4NDg0MDgwNDIxNjdfbi5tcDQ/ZWZnPWV5SnhaVjluY205MWNITWlPaUpiWENKcFoxOXdjbTluY21WemMybDJaVjkxY214blpXNHVjSEp2WkhWamRGOTBlWEJsTG5OMGIzSjVYQ0pkSW4wJl9uY19odD1zY29udGVudC1pYWQzLTEuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwNSZfbmNfb2hjPXpoZGRVMlJhYXd3QVgtX3VUUDMmZWRtPUFPVnRaNm9CQUFBQSZjY2I9Ny01Jm9lPTYyQTI4QzUwJm9oPTAwX0FUOXFZMlZneXVLaWd3VG1WRHpMMl9XWXdBcWdJU1ZBUzQydjNleDBJTWRLYlEmX25jX3NpZD1iYWI2Mzg="></video>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- FOOTER Star  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-3 mb-3">
+            © 2022 - 2022 StoryViewer <span class="text-muted">beta 0.1</span>. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
